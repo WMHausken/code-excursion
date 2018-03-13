@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head><title>Contact Us</title></head>
+    
+    <body>
+    
+        <div id="name">
+        <h1>Dine, Diner, Dinest</h1>
+        <h3><i>A Gastrofusion Bistropub</i></h3>
+        </div>
+        
+        <div id="navigation">
+        <hr/>
+            <p><a href=homePage.html>Home<a> <a href=menu.html>Menu<a> <a href=contactUs.html>Contact Us<a></p>
+        <hr/>
+        </div>
+        
+        <div id="contactForm">
+        <form action="submit.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br/>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br/>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br/>
+            
+            <label for="reason">Reason for Inquiry:</label>
+            <select id="reason" name="reason">
+                <option value="catering" selected>Catering</option>
+                <option value="private">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br/>
+            
+            <label for="info">Additional Information</label><br/>
+            <textarea id="info"></textarea><br/>
+            
+            <p>
+            Have you been to the restaurant?
+            <input type="radio" id="choice1" name="query" value="No" checked/><label for="choice1">No</label>
+            <input type="radio" id="choice2" name="query" value="Yes"><label for="choice2">Yes</label>
+            </p>
+            
+            <p>
+            Best days to contact you:
+            <input type="checkbox" id="monday" name="contact" value="monday"><label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="contact" value="tuesday"><label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="contact" value="wednesday"><label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="contact" value="thursday"><label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="contact" value="friday"><label for="friday">F</label>
+            </p>
+            
+            <input type="submit" value="Send Requests"><br/>
+        
+        </div>
+       
+        
+        <div id="footer">
+        <hr />
+        <footer>
+        <p>126 Broken Dreams Blvd, Kansas City, Missouri, 64146</p>
+        <p>(816) 208-1108</p>
+        <p>&copy; 2112 Wade Hausken</p>
+        </footer>
+        </div>
+        
+    </body>
+
+</html>
