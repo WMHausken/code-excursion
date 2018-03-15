@@ -2,29 +2,52 @@
 
 <html>
 
-    <head><title>Home Page</title></head>
+    <head>
+        <title>Home Page</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            #description {
+            text-align: justify;
+            width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            
+
+        </style>
+    </head>
     
     <body>
-    
-        <div id="name">
-        <h1>Dine, Diner, Dinest</h1>
-        <h3><i>A Gastrofusion Bistropub</i></h3>
-        </div>
+        <div id="header">
+			<div id="restaurantName">
+				<h1>Dine, Diner, Dinest</h1>
+				<h3><i>A Gastrofusion Bistropub</i></h3>
+			</div>
         
-        <div id="navigation">
-        <hr/>
-            <p><a href=homePage.html>Home<a> <a href=menu.html>Menu<a> <a href=contactUs.html>Contact Us<a></p>
-        <hr/>
+			<div id="navigation">
+				<hr/>
+				<a href=homePage.html>Home</a> <a href=menu.html>Menu</a> <a href=contactUs.html>Contact Us</a>
+			</div>
         </div>
         
         <div id="main">
             <div id="image">
                 <img 
                 src="images\storefront.jpg"
-                style="width: 400px;height: 150px;"
+                style="
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 400px;
+                    height: 150px;
+                    padding: 2px;
+                    border: 2px solid #08415C;
+                    
+                "
                 alt="The charming restaurant storefront: rubble and a chainlink fence" 
                 />
-                <p><i>Our storefront is currently under minor construction.</i></p>
+                <p style="text-align: center;"><i>Our storefront is currently under minor construction.</i></p>
             </div>
             <div id="description">
             <p>
@@ -32,13 +55,12 @@
             </p>
             </div>
         </div>
-        
+
         <div id="footer">
-        <hr />
+
         <footer>
         <p>126 Broken Dreams Blvd, Kansas City, Missouri, 64146</p>
         <p>(816) 208-1108</p>
-        <p>&copy; 2112 Wade Hausken</p>
         </footer>
         </div>
         
