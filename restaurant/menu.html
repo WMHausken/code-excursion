@@ -2,109 +2,118 @@
 
 <html>
 
-    <head>
+<head>
 		<title>Menu Page</title>
-		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.min.js"></script>
 		<style>
-			table.entrees{
-				width: 90%;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				margin-left: 5%;
-				margin-right: 5%;
-				border: 2px solid #08415C;
-				background-color: #F1BF98;
-				}
-				
-			table.beverages{
-				width: 70%;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				margin-left: 12.5%;
-				margin-right: 12.5%;
-				border: 2px solid #08415C;
-				background-color: #F1BF98;
-				}
-			
-			tbody.beverages tr:nth-child(odd){
-				background-color: rgba(120,95,176,0.5);
-				}
-			
-			caption {
-				font-weight: bold;
-				font-size: 30px;
-				}
-			
-			th,td{padding: 5px;}
-			
-			th{
-				font-size: 18px;
-				text-align: left;
-				}
-			
-			td{
-				text-align: center;
-				}
-			
-			td.price{
-				text-align: right;
-				padding-right: 20px;
-				font-style: italic;
-				}
+            .price{margin-right: 30px;}
+            .menuItem{font-weight: bold;}
 		</style>
-    </head>
+</head>
     
-    <body>
-        <div id="header">
-			<div id="restaurantName">
-				<h1>Dine, Diner, Dinest</h1>
-				<h3><i>A Gastrofusion Bistropub</i></h3>
-			</div>
-        
-			<div  id="navigation">
-				<hr/>
-				<a href=homePage.html>Home</a> <a href=menu.html>Menu</a> <a href=contactUs.html>Contact Us</a>
-			</div>
+<body>
+
+    <div class="jumbotron" style="margin-bottom: 0px;">
+        <h1>New Location at Baker & 59th!</h1>
+        <p>The Dine, Diner, Dinest Dynasty will be opening
+        a new location on Baker St, just north of the 59th St Bridge. Come check out our exclusive specials!</p>
+    </div>
+
+<div class="container">
+
+        <div class="page-header clearfix" style="margin-top: 0px;">
+
+            <h1>Dine, Diner, Dinest <br/>
+            <small>A Gastrofusion Bistropub</small></h1>
+
         </div>
         
+    <ul class="nav nav-pills" style = "margin-bottom: 20px;">
+        <li><a href=homePage.html><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="active"><a href=menu.html>Menu</a></li>
+        <li><a href=contactUs.html>Contact Us</a></li>
+    </ul>
         
-        <div id="main">
         
-        <div id="menu">
-            <table class="entrees">
-				<caption>Entrees</caption>
-                <tr>
-                    <th>Burger and Fries</th>
-                    <th>Hot Dog and Chips</th>
-                    <th>Italian Sausage and Peppers</th>
-                </tr>
-                <tr>
-                    <td>An American Classic!<br/>Your choice - with or without cheese<br/>Pickle, onion, tomato, and lettuce<br/>Served with our famous thick-cut french fries</td>
-                    <td>A Summer Classic!<br/>Your choice - white or wheat bun<br/>Relish, mustard, and ketchup<br/>Served with our house-made chips</td>
-                    <td>An All-Time Favorite!<br/>Your choice - mild or spicy<br/>Cole Slaw<br/>Served with garlic mashers</td>
-                </tr>
-				<tr>
-					<td class="price">$7.95</td>
-					<td class="price">$7.95</td>
-					<td class="price">$10.95</td>
-				</tr>
-                <tr>
-                    <th>Tenderloin Sandwich and Chips</th>
-                    <th>House Salad</th>
-                    <th>Brisket Sandwich and Fries</th>
-                </tr>
-                <tr>
-                    <td>Really Hits the Spot!<br/>Plain or Sesame Seed Bun<br/>Pickle, onion, tomato, and lettuce<br/>Served with our house-made chips</td>
-                    <td>On the Lighter Side<br/>Your choice - with or without cheese<br/>Iceberg lettuce, tomatoes, peppers<br/>Thousand Island or Ranch Dressing<br/>Served with a dinner roll</td>
-                   <td>A Taste of Texas!<br/>Smoked Brisket on thick-cut Texas Toast<br/>Cole Slaw<br/>Served with our famous thick-cut french fries</td>
-                </tr>
-				<tr>
-					<td class="price">$8.95</td>
-					<td class="price">$8.95</td>
-					<td class="price">$8.95</td>
-				</tr>
-            </table>
-			<table class="beverages">
+        
+        
+
+
+        <div class = "row">
+            <div class="col-xs-4">
+                <div class="menuItem">
+                    Burger and Fries
+                </div>
+                <div class="text-center">
+                    An American Classic!<br/>Your choice - with or without cheese<br/>Pickle, onion, tomato, and lettuce<br/>Served with our famous thick-cut french fries</div>
+                <div class="text-right">
+                    $7.95
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="menuItem">
+                    Hot Dog and Chips
+                </div>
+                <div class="text-center">
+                    A Summer Classic!<br/>Your choice - white or wheat bun<br/>Relish, mustard, and ketchup<br/>Served with our house-made chips</div>
+                <div class="text-right">
+                    $7.95
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="menuItem">
+                    Italian Sausage and Peppers
+                </div>
+                <div class="text-center">
+                    An All-Time Favorite!<br/>Your choice - mild or spicy<br/>Cole Slaw<br/>Served with garlic mashers
+                </div>
+                <div class="text-right">
+                    $10.95
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="menuItem">
+                    Tenderloin Sandwich and Chips
+                </div>
+                <div class="text-center">
+                    Really Hits the Spot!<br/>Plain or Sesame Seed Bun<br/>Pickle, onion, tomato, and lettuce<br/>Served with our house-made chips
+                </div>
+                <div class="text-right">
+                    $8.95
+                </div>
+            </div>
+             <div class="col-xs-4">
+                <div class="menuItem">
+                    House Salad
+                </div>
+                <div class="text-center">
+                    On the Lighter Side<br/>Your choice - with or without cheese<br/>Iceberg lettuce, tomatoes, peppers<br/>Thousand Island or Ranch Dressing<br/>Served with a dinner roll
+                </div>
+                <div class="text-right">
+                    $8.95
+                </div>
+            </div>
+             <div class="col-xs-4">
+                <div class="menuItem">
+                    Brisket Sandwich and Fries
+                </div>
+                <div class="text-center">
+                    A Taste of Texas!<br/>Smoked Brisket on thick-cut Texas Toast<br/>Cole Slaw<br/>Served with our famous thick-cut french fries
+                </div>
+                <div class="text-right">
+                    $8.95
+                </div>
+            </div>
+        </div>
+       
+
+				
+            
+			<table class="table-striped" style="width: 50%;">
 				<caption>Beverages</caption>
 				
 				<tbody class="beverages">
@@ -133,15 +142,16 @@
 			</table>	
         
         </div>
-        </div>
+
         
-        <div id="footer">
-        <footer>
+</div>
+
+        <footer class = "text-center">
+        <hr/>
         <p>126 Broken Dreams Blvd, Kansas City, Missouri, 64146</p>
         <p>(816) 208-1108</p>
         </footer>
-        </div>
         
-    </body>
+</body>
     
 </html>

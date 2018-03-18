@@ -2,68 +2,77 @@
 
 <html>
 
-    <head>
+<head>
         <title>Home Page</title>
-        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.min.js"></script>
         <style>
-            #description {
-            text-align: justify;
-            width: 400px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            }
             
-
         </style>
-    </head>
+</head>
     
-    <body>
-        <div id="header">
-			<div id="restaurantName">
-				<h1>Dine, Diner, Dinest</h1>
-				<h3><i>A Gastrofusion Bistropub</i></h3>
-			</div>
+<body>
+
+    <div class="jumbotron" style="margin-bottom: 0px;">
+        <h1>New Location at Baker & 59th!</h1>
+        <p>The Dine, Diner, Dinest Dynasty will be opening
+        a new location on Baker St, just north of the 59th St Bridge. Come check out our exclusive specials!</p>
+    </div>
+    
+<div class="container">
+
+    <div class="page-header clearfix" style="margin-top: 0px;">
+
+        <h1>Dine, Diner, Dinest <br/>
+        <small>A Gastrofusion Bistropub</small></h1>
+
+    </div>
         
-			<div id="navigation">
-				<hr/>
-				<a href=homePage.html>Home</a> <a href=menu.html>Menu</a> <a href=contactUs.html>Contact Us</a>
-			</div>
+    <ul class="nav nav-pills" style = "margin-bottom: 20px;">
+        <li class="active"><a href=homePage.html><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href=menu.html>Menu</a></li>
+        <li><a href=contactUs.html>Contact Us</a></li>
+    </ul>
+    
+    <div class="container bg-info" style = "margin-bottom: 20px;"> 
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h4 class="text-center"><b>NEW LOCATION: DDD at Baker and 59th!</b><br/> Caution: Local derelicts are not valet parking.</h4>
+                </div>
+                <div class="item">
+                    <h4 class="text-center"><b>SUMMER'S COMING! That means summer specials!</b><br/>Fried catifsh, caught fresh (and fried) from the Missouri!</h4>
+                </div>
+                <div class="item">
+                    <h4 class="text-center"><b>DRINK OF THE MONTH:</b><br/>SG Special Brew (Brewed especially for you)!</h4>
+                </div>
+            </div>
         </div>
-        
-        <div id="main">
-            <div id="image">
+    </div>
+            <div class="text-center">
                 <img 
-                src="images\storefront.jpg"
-                style="
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 400px;
-                    height: 150px;
-                    padding: 2px;
-                    border: 2px solid #08415C;
-                    
-                "
-                alt="The charming restaurant storefront: rubble and a chainlink fence" 
+                    src="images\storefront.jpg"
+                    class = "img-rounded";
+                    style = "width: 50%;"
+                    alt="The charming restaurant storefront: rubble and a chainlink fence" 
                 />
-                <p style="text-align: center;"><i>Our storefront is currently under minor construction.</i></p>
+                <p class="caption" style="margin-bottom: 20px;">Our storefront is currently under minor construction.</p>
             </div>
-            <div id="description">
-            <p>
-            Dine, Diner, Dinest is a charming bistropub specializing in gastrofusion cuisine located in the heart of Kansas City's vibrant Industrial District. You'll find everything from classic American comfort food to a salad. Wow! Don't forget to check out our extensive tap selection -- there are fractions of dozens of beers, both local and domestic. You won't leave disappointed, that's a promise (because we won't let you leave. Ever.)!
-            </p>
+            
+            <div class="center-block" style="width: 50%; text-align: justify;">
+                    Dine, Diner, Dinest is a charming bistropub specializing in gastrofusion cuisine located in the heart of Kansas City's vibrant Industrial District. You'll find everything from classic American comfort food to a salad. Wow! Don't forget to check out our extensive tap selection -- there are fractions of dozens of beers, both local and domestic. You won't leave disappointed, that's a promise (because we won't let you leave. Ever.)!
             </div>
-        </div>
 
-        <div id="footer">
-
-        <footer>
+        <footer class = "text-center">
+        <hr/>
         <p>126 Broken Dreams Blvd, Kansas City, Missouri, 64146</p>
         <p>(816) 208-1108</p>
         </footer>
-        </div>
-        
-    </body>
+ 
+ 
+</div> 
+</body>
     
 </html>

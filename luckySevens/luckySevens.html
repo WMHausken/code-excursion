@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Lucky Sevens</title>
+    <script type="text/javascript" src="luckySevens.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-header clearfix">
+    
+        <h1 class="text-center">Lucky Sevens</h1>
+        <div class="center-block" style="text-align: justify; width: 50%;">Rules: Every round, 2 dice will be rolled. If a 7 is rolled, you get $4. Otherwise, you lose $1. The game continues until you're all out of money. Fun, right?</div>
+        
+    </div>
+    
+    <div class="text-center">
+        <label>Starting Bet:</label>
+        <input type="text"id="startingBet"></input>
+    </div>
+    <div class="text-center">
+        <button onclick="playGame();" class="btn btn-lg btn-success" id="playButton">Play!</button>
+    </div>
+    <hr/>
+
+    <div id="resultsTable" style="display: none">
+    <table class="table table-bordered table-striped" style="margin-left: auto; margin-right: auto; width: 50%">
+    <h3 class="text-center">Results</h3>
+    <tr>
+        <td>Starting Bet</td>
+        <td>$ <span id="startingResult">###</span></td>
+    </tr>
+    <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td><span id="rollCountResult">###</td>
+    </tr>
+    <tr>
+        <td>Highest Amount Won</td>
+        <td>$ <span id="highestResult">###</span></td>
+    </tr>
+    <tr>
+        <td>Roll Count at Highest Amount Won</td>
+        <td><span id="rollAtHighestResult">###</td>
+    </tr>
+    </table>
+    </div>
+
+</div>   
+</body>
+</html>
